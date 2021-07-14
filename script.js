@@ -35,18 +35,18 @@ class Student {
   }
 }
 
-const pashaDalbaeb = new Student("Student of 4 course in", "NU 'LP'", "Pasha Dovbokryak");
+const pasha = new Student("Student of 4 course in", "NU 'LP'", "Pasha Ostapenko");
 
-console.log("Student info: ", pashaDalbaeb.getInfo);
-pashaDalbaeb.setMarks = 5;
-console.log("Student marks: ", pashaDalbaeb.getMarks);
-console.log("Average mark: ", pashaDalbaeb.getAverageMark);
+console.log("Student info: ", pasha.getInfo);
+pasha.setMarks = 5;
+console.log("Student marks: ", pasha.getMarks);
+console.log("Average mark: ", pasha.getAverageMark);
 
-pashaDalbaeb.setDismiss();
-console.log("Student marks: ", pashaDalbaeb.getMarks);
+pasha.setDismiss();
+console.log("Student marks: ", pasha.getMarks);
 
-pashaDalbaeb.recover();
-console.log("Student marks: ", pashaDalbaeb.getMarks);
+pasha.recover();
+console.log("Student marks: ", pasha.getMarks);
 
 //advanced
 class BudgetStudent extends Student {
@@ -63,5 +63,5 @@ class BudgetStudent extends Student {
   }
 }
 
-const petushara = new BudgetStudent("Student of 4 course in", "NU 'LP'", "Maks petushara", 2000);
-console.log("grgs", petushara);
+const maksimilian = new BudgetStudent("Student of 4 course in", "NU 'LP'", "Maksimilian Naievski", 5000);
+console.log("Maksimilian information: ", maksimilian);
